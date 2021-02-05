@@ -223,8 +223,7 @@ public class BonusGameSelect : MonoBehaviour
                 BonusGames[0].text = "Jump to save yourself";
             }
         }
-        Played = 1;
-     
+
         SelectedLeaderGame = game;
         PlayWindow.SetActive(true);
         PlayWindowAn.SetInteger("winkawonka",0);
@@ -242,6 +241,7 @@ public class BonusGameSelect : MonoBehaviour
     }
     public void PlaySelected() 
     {
+        Played = 1;
         SceneManager.LoadScene(3);
     }
 
